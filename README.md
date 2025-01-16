@@ -55,21 +55,24 @@ bash
 Copy code
 **
 
-### **Basic Usage**
+### Fetch Papers and Print Results to Console
+
+
 Run the program from the command line:
 ```bash
-poetry run get-papers-list "your query here"
+python main.py "your query"
+
 ```
 
-### ** To save results to a CSV file:**
+### Fetch Papers and Save Results to a CSV File
 ```bash
-poetry run python my_project/main.py "cancer research" -f results.csv
+python main.py "your query" -f results.csv
 ```
 This will execute the program and save the results to results.csv.
-### ** To enable debug mode:**
+### Fetch Papers with Debug Logging
 Enable debug mode to print detailed logs:
 ```bash
-poetry run python my_project/main.py "cancer research" -d
+python main.py "your query" -d
 ```
 ### **Tools and Libraries Used**
 1.Poetry: A Python dependency manager used to install and manage project dependencies. Poetry Documentation
